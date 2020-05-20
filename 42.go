@@ -31,6 +31,7 @@ func main () {
 			counter++
 		}
 	}
+	
 	fmt.Println(counter)
 }
 
