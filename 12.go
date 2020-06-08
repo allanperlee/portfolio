@@ -36,20 +36,22 @@ func continued(natural int) int{
 
 
 func main(){
-	var startHere int = int(math.Pow(2, 4)) * int(math.Pow(3, 4)) * int(math.Pow(5, 4)) * 7 * 11
+	//a shortcut to the first number that contains 500 divisors
+	var shortcut int = int(math.Pow(2, 4)) * int(math.Pow(3, 4)) * int(math.Pow(5, 4)) * 7 * 11
 	
-	for !isTriangle(startHere){
-		startHere ++
+	for !isTriangle(shortcut){
+		shortcut ++
 	}
 
-	var lastItem int = continued(startHere)
+	var lastItem int = continued(shortcut)
 
-	for divisors(startHere) <= 500{
-		startHere += lastItem
+	for divisors(shortcut) <= 500{
+		shortcut += lastItem
 		lastItem ++
 	}
 
-	fmt.Println(startHere)
+	fmt.Println(shortcut)
+
 }
 
 //prints 76576500
