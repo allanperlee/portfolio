@@ -1,2 +1,2 @@
 # portfolio
-Project Euler solutions, Python library, and other projects
+Project Euler solutions
